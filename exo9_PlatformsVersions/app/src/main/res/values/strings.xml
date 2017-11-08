@@ -1,0 +1,31 @@
+<resources>
+    <!-- app name -->
+    <string name="app_name">Au camping</string>
+
+    <!-- icon search on toolbar top -->
+    <string name="text_search">Search</string>
+
+    <!--text of icon's bottomNavigationView -->
+    <string name="text_home">Home</string>
+    <string name="text_account">Account</string>
+    <string name="text_catalog">Catalog</string>
+    <string name="text_calendar">Calendar</string>
+    <string name="text_settings">Settings</string>
+
+    <!-- TabItem of TabLayout in catalog -->
+    <string name="text_list">List</string>
+    <string name="text_map">Map</string>
+
+    <!-- MapBox key -->
+    <string name="map_box_key">pk.eyJ1IjoiaW5jY3ViZSIsImEiOiJjajk4NW12MDUwbjdtMnFudDd2NzV1NWVnIn0.A09OWkJaZHMNTkYLI7d9Bw</string>
+
+    <!-- activity_description_emplacement -->
+    <string name="img">img</string>
+    <string name="surface">Surface</string>
+    <string name="rooms">Rooms</string>
+    <string name="persons">Persons</string>
+    <string name="title_description">Description :</string>
+    <string name="description">Cum saepe multa, tum memini domi in hemicyclio sedentem, ut solebat, cum et ego essem una et pauci admodum familiares, in eum sermonem illum incidere qui tum forte multis erat in ore. Meministi enim profecto, Attice, et eo magis, quod P. Sulpicio utebare multum, cum is tribunus plebis capitali odio a Q. Pompeio, qui tum erat consul, dissideret, quocum coniunctissime et amantissime vixerat, quanta esset hominum vel admiratio vel querella.</string>
+    <string name="reserve">Reserve</string>
+
+</resources>

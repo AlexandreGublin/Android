@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.controle_2_maps.DescriptionRestaurantActivity">
+
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        mapbox:mapbox_cameraTargetLat="40.731500"
+        mapbox:mapbox_cameraTargetLng="-73.990699"
+        mapbox:mapbox_cameraZoom="12"
+        mapbox:mapbox_styleUrl="mapbox://styles/mapbox/streets-v10"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/mapView2"
+        >
+
+        <ImageView
+            android:id="@+id/img_restaurant2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:contentDescription="img_emplacement"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_restaurant_name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="22dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:text="restaurant_name"/>
+
+            <TextView
+                android:id="@+id/text_restaurant_address2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="14dp"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="restaurant_address"/>
+
+            <TextView
+                android:id="@+id/text_restaurant_price2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="14dp"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="restaurant_price"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_phone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_layout_description"
+        android:orientation="vertical"
+        >
+
+        <ImageButton
+            android:id="@+id/img_restaurant_phone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:onClick="onClickCall"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:src="@drawable/ic_cellphone_iphone"
+
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="onClickReserve"
+        android:text="Reserve"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+
+
+</RelativeLayout>

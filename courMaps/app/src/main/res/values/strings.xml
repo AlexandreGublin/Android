@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Maps</string>
+    <string name="google_maps_keys">AIzaSyC-xQSc9HD_4foqrguJntQSbFR0-dLWczY</string>
+    <string name="map_box_keys">pk.eyJ1IjoiaW5jY3ViZSIsImEiOiJjajk4NW12MDUwbjdtMnFudDd2NzV1NWVnIn0.A09OWkJaZHMNTkYLI7d9Bw</string>
+    <string name="auth_failed">L\'authentification a échoué.</string>
+</resources>

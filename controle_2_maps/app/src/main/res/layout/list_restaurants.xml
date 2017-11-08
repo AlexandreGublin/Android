@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/img_restaurant"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="img_restaurant"
+        android:layout_margin="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        >
+
+        <TextView
+            android:id="@+id/text_name_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name_restaurant"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:paddingTop="29dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/text_price_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="price_restaurant"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:paddingTop="20dp"
+
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.student.camping_imerir.DescriptionEmplacementActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_emplacement"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:contentDescription="@string/img"
+                />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_decription"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_below="@id/img_emplacement"
+                >
+
+                <TextView
+                    android:id="@+id/textView_surface"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/surface"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:background="@color/primaryLightColor"
+                    />
+
+                <TextView
+                    android:id="@+id/textView_persons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/persons"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/textView_rooms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/rooms"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:background="@color/primaryLightColor"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_title_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_description"
+                android:textSize="17sp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:layout_below="@id/linearLayout_decription"
+                />
+
+            <TextView
+                android:id="@+id/textView_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:padding="20dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/textView_title_description"
+                />
+            </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_reserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryLightColor"
+        android:text="@string/reserve"
+        android:textColor="@color/secondaryLightColor"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.testintent.DisplayMessageActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:text="Text Appears here"
+        android:textAlignment="center"
+        android:textAllCaps="true"/>
+
+
+</FrameLayout>
+
+
